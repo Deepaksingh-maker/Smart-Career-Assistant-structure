@@ -15,6 +15,7 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 :root { --ink:#17212b; --muted:#64748b; --teal:#0f766e; --mint:#ccfbf1; --line:#dbe5e2; --paper:#f7faf9; }
+html, body, [data-testid="stAppViewContainer"] { color-scheme:light; background:var(--paper); color:var(--ink); }
 .stApp { background:var(--paper); color:var(--ink); font-family:'DM Sans', sans-serif; }
 h1,h2,h3 { font-family:'Space Grotesk', sans-serif; letter-spacing:0; }
 h1 { font-size:2.5rem; } h2 { margin-top:1.5rem; }
@@ -28,6 +29,8 @@ h1 { font-size:2.5rem; } h2 { margin-top:1.5rem; }
 .flow span { white-space:nowrap; background:white; border:1px solid var(--line); padding:.65rem .85rem; border-radius:6px; font-weight:600; }
 .flow b { color:var(--teal); }
 .stMetric { background:white; border:1px solid var(--line); border-radius:6px; padding:.75rem; }
+input, textarea, [data-baseweb="select"] > div, [data-testid="stDataFrame"], [data-testid="stDataEditor"] { background:#ffffff; color:var(--ink); }
+input::placeholder, textarea::placeholder { color:#64748b; opacity:1; }
 div[data-testid="stExpander"] { background:white; border:1px solid var(--line); border-radius:6px; margin-bottom:.5rem; }
 </style>
 """, unsafe_allow_html=True)
